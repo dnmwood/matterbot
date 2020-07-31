@@ -5,8 +5,9 @@ module Types
     field :last_name, String, null: false
     field :email, String, null: false
     field :status, String, null: false
-    field :subscription, Type::Subscription, null: true
+    field :subscription, Types::SubscriptionType, null: true
 
+    # Methods
     field :full_name, String, null: false
 
     def full_name
