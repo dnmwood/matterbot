@@ -11,9 +11,9 @@ class Mutations::CreateUser < Mutations::BaseMutation
     def resolve(first_name:, last_name:, email:, password:, password_confirmation:)
       user = User.new(
           first_name: first_name,
-          last_name: last_time, 
-          email: email, 
-          password: password, 
+          last_name: last_name,
+          email: email,
+          password: password,
           password_confirmation: password_confirmation
         )
       if user.save
